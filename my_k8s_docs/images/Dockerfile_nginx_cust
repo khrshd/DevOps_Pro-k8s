@@ -1,0 +1,4 @@
+FROM nginx
+MAINTAINER khurshid 
+COPY  .  /usr/share/nginx/html/
+EXPOSE 80
