@@ -1,0 +1,8 @@
+FROM ubuntu:latest
+ARG DEBIAN_FRONTEND=noninteractive
+MAINTAINER khurshid 
+#RUN apt-get update -y
+RUN apt-get install -y apache2
+COPY . /var/www/html/
+EXPOSE 80
+ENTRYPOINT ["apache2ctl", "-D", "FOREGROUND"]

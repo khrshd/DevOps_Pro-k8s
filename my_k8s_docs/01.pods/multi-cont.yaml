@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: multi-container-pod-v2
+spec: 
+  containers:
+  - name: apache
+    image: latest
+    ports:
+    - containerPort: 82
+  - name: busybox-sidecar
+    image: busybox
+    command: ['sh', '-c', 'while true; do sleep 30; done;']

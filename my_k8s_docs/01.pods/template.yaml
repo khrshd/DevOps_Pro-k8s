@@ -1,0 +1,14 @@
+apiVersion: batch/v1
+kind: Job
+metadata: 
+  name: hello
+spec: 
+  template:
+    # this is the pod template
+    spec:
+      containers:
+      - name: hello
+        image: busybox
+        command: ['sh', '-c', 'echo "Hello, kubernetes!" && sleep 3600']
+      restartPolicy: OnFailure
+    # the pod template ends here
