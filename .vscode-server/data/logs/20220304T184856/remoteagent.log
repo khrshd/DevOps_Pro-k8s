@@ -1,0 +1,34 @@
+[2022-03-04 18:48:59.845] [remoteagent] [info] Extension host agent started.
+[2022-03-04 18:49:10.015] [remoteagent] [warning] No ptyHost heartbeat after 6 seconds
+[2022-03-04 18:49:10.615] [remoteagent] [info] [127.0.0.1][d99e96b6][ExtensionHostConnection] New connection established.
+[2022-03-04 18:49:10.627] [remoteagent] [info] [127.0.0.1][d99e96b6][ExtensionHostConnection] <2398> Launched Extension Host Process.
+[2022-03-04 18:51:32.374] [remoteagent] [info] [127.0.0.1][634ea704][ManagementConnection] New connection established.
+[2022-03-04 18:51:32.375] [remoteagent] [info] [127.0.0.1][72120964][ExtensionHostConnection] New connection established.
+[2022-03-04 18:51:32.384] [remoteagent] [info] [127.0.0.1][72120964][ExtensionHostConnection] <3904> Launched Extension Host Process.
+[2022-03-04 18:56:32.930] [remoteagent] [info] [127.0.0.1][d99e96b6][ExtensionHostConnection] <2398> Extension Host Process exited with code: 0, signal: null.
+[2022-03-04 21:37:39.146] [remoteagent] [info] [127.0.0.1][634ea704][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[2022-03-04 21:38:53.894] [remoteagent] [info] [127.0.0.1][634ea704][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+[2022-03-04 21:38:53.895] [remoteagent] [info] [127.0.0.1][634ea704][ManagementConnection] The client has reconnected.
+[2022-03-04 21:38:53.927] [remoteagent] [info] [127.0.0.1][72120964][ExtensionHostConnection] The client has reconnected.
+[2022-03-04 22:01:49.573] [remoteagent] [info] [127.0.0.1][634ea704][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[2022-03-04 22:02:13.051] [remoteagent] [info] [127.0.0.1][634ea704][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+[2022-03-04 22:02:13.051] [remoteagent] [info] [127.0.0.1][634ea704][ManagementConnection] The client has reconnected.
+[2022-03-04 22:02:13.088] [remoteagent] [info] [127.0.0.1][72120964][ExtensionHostConnection] The client has reconnected.
+[2022-03-05 02:39:17.297] [remoteagent] [info] [127.0.0.1][634ea704][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[2022-03-05 05:30:02.679] [remoteagent] [info] [127.0.0.1][634ea704][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+[2022-03-05 05:30:02.680] [remoteagent] [info] [127.0.0.1][c6cb009b][ManagementConnection] New connection established.
+[2022-03-05 05:30:02.685] [remoteagent] [info] [127.0.0.1][11bfadd9][ExtensionHostConnection] New connection established.
+[2022-03-05 05:30:02.700] [remoteagent] [info] [127.0.0.1][11bfadd9][ExtensionHostConnection] <2969> Launched Extension Host Process.
+[2022-03-05 05:35:03.565] [remoteagent] [info] [127.0.0.1][634ea704][ManagementConnection] The reconnection short grace time of 5m has expired, so the connection will be disposed.
+[2022-03-05 05:35:03.594] [remoteagent] [info] [127.0.0.1][72120964][ExtensionHostConnection] <3904> Extension Host Process exited with code: 0, signal: null.
+[2022-03-05 08:14:05.776] [remoteagent] [info] [127.0.0.1][c6cb009b][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[2022-03-05 08:20:23.599] [remoteagent] [info] [127.0.0.1][c6cb009b][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+[2022-03-05 08:20:23.599] [remoteagent] [info] [127.0.0.1][c594a09d][ManagementConnection] New connection established.
+[2022-03-05 08:20:23.608] [remoteagent] [info] [127.0.0.1][c6374589][ExtensionHostConnection] New connection established.
+[2022-03-05 08:20:23.621] [remoteagent] [info] [127.0.0.1][c6374589][ExtensionHostConnection] <2270> Launched Extension Host Process.
+[2022-03-05 08:25:24.277] [remoteagent] [info] [127.0.0.1][c6cb009b][ManagementConnection] The reconnection short grace time of 5m has expired, so the connection will be disposed.
+[2022-03-05 08:25:24.303] [remoteagent] [info] [127.0.0.1][11bfadd9][ExtensionHostConnection] <2969> Extension Host Process exited with code: 0, signal: null.
+[2022-03-05 10:04:18.801] [remoteagent] [info] [127.0.0.1][c594a09d][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[2022-03-05 10:04:29.250] [remoteagent] [info] [127.0.0.1][c594a09d][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+[2022-03-05 10:04:29.250] [remoteagent] [info] [127.0.0.1][c594a09d][ManagementConnection] The client has reconnected.
+[2022-03-05 10:04:29.272] [remoteagent] [info] [127.0.0.1][c6374589][ExtensionHostConnection] The client has reconnected.

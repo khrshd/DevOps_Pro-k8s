@@ -1,0 +1,3893 @@
+*
+* Visual Studio Code Server
+*
+* By using the software, you agree to
+* the Visual Studio Code Server License Terms (https://aka.ms/vscode-server-license) and
+* the Microsoft Privacy Statement (https://privacy.microsoft.com/en-US/privacystatement).
+*
+Server bound to 127.0.0.1:34489 (IPv4)
+Extension host agent listening on 34489
+
+[20:33:28] Extension host agent started.
+[20:33:34] [127.0.0.1][ebbcd45e][ManagementConnection] New connection established.
+[20:33:34] [127.0.0.1][83a63d7b][ExtensionHostConnection] New connection established.
+[20:33:34] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> Launched Extension Host Process.
+[20:33:34] No ptyHost heartbeat after 6 seconds
+[20:34:03] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> /usr/bin/kubectl
+
+[20:34:08] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> prod
+
+[20:34:08] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+{
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[20:34:08] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[20:34:08] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[20:34:09] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> 
+To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
+
+[20:34:09] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532><stderr> The connection to the server 192.168.0.186:6443 was refused - did you specify the right host or port?
+
+[20:34:09] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532><stderr> error: couldn't get available api versions from server: Get "https://192.168.0.186:6443/api?timeout=32s": dial tcp 192.168.0.186:6443: connect: connection refused
+
+[20:34:09] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532><stderr> The connection to the server 192.168.0.186:6443 was refused - did you specify the right host or port?
+
+[20:34:09] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532><stderr> Error: no repositories to show
+
+[20:34:10] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> CurrentVersion: v1.25.2
+
+[20:34:10] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> LatestVersion: v1.25.2
+
+[20:34:20] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> /usr/bin/kubectl
+
+[20:34:20] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532><stderr> The connection to the server 192.168.0.186:6443 was refused - did you specify the right host or port?
+
+[20:34:20] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+  "clientVersion": {
+    "major": "1",
+    "minor": "23",
+    "gitVersion": "v1.23.4",
+    "gitCommit": "e6c093d87ea4cbb530a7b2ae91e54c0842d8308a",
+    "gitTreeState": "clean",
+    "buildDate": "2022-02-16T12:38:05Z",
+    "goVersion": "go1.17.7",
+    "compiler": "gc",
+    "platform": "linux/amd64"
+  }
+}
+
+[20:34:20] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532><stderr> The connection to the server 192.168.0.186:6443 was refused - did you specify the right host or port?
+
+[20:34:22] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532><stderr> The connection to the server 192.168.0.186:6443 was refused - did you specify the right host or port?
+
+[20:35:08] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[20:36:08] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[20:37:08] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[20:38:08] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[20:39:09] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[20:40:09] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[20:41:09] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[20:42:09] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[20:43:09] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[20:44:09] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[20:44:26] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[20:44:26] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "apiVersion": "v1",
+    "items": [
+        {
+            "apiVersion": "apps/v1",
+            "kind": "Deployment",
+            "metadata": {
+                "annotations": {
+                    "deployment.kubernetes.io/revision": "1"
+                },
+                "creationTimestamp": "2022-03-23T22:23:31Z",
+                "generation": 1,
+                "name": "my-nginx",
+                "namespace": "production",
+                "resourceVersion": "259280",
+                "uid": "8ca2d6c2-d03e-439f-a5a3-9f6ecb1d50a9"
+            },
+            "spec": {
+                "progressDeadlineSeconds": 600,
+                "replicas": 1,
+                "revisionHistoryLimit": 10,
+                "selector": {
+                    "matchLabels": {
+                        "run": "my-nginx"
+                    }
+                },
+                "strategy": {
+                    "rollingUpdate": {
+                        "maxSurge": "25%",
+                        "maxUnavailable": "25%"
+                    },
+                    "type": "RollingUpdate"
+                },
+                "template": {
+                    "metadata": {
+                        "creationTimestamp": null,
+                        "labels": {
+                            "run": "my-nginx"
+                        }
+                    },
+                    "spec": {
+                        "containers": [
+                            {
+                                "image": "bprashanth/nginxhttps:1.0",
+                                "imagePullPolicy": "IfNotPresent",
+                                "name": "nginxhttps",
+                                "ports": [
+                                    {
+                                        "containerPort": 443,
+                                        "protocol": "TCP"
+                                    },
+                                    {
+                                        "containerPort": 80,
+                                        "protocol": "TCP"
+                                    }
+                                ],
+                                "resources": {},
+                                "terminationMessagePath": "/dev/termination-log",
+                                "terminationMessagePolicy": "File",
+                                "volumeMounts": [
+                                    {
+                                        "mountPath": "/etc/nginx/ssl",
+                                        "name": "secret-volume"
+                                    },
+                                    {
+                                        "mountPath": "/etc/nginx/conf.d",
+                                        "name": "configmap-volume"
+                                    }
+                                ]
+                            }
+                        ],
+                        "dnsPolicy": "ClusterFirst",
+                        "restartPolicy": "Always",
+                        "schedulerName": "default-scheduler",
+                        "securityContext": {},
+                        "terminationGracePeriodSeconds": 30,
+                        "volumes": [
+                            {
+                                "name": "secret-volume",
+                                "secret": {
+                                    "defaultMode": 420,
+                                    "secretName": "nginxsecret"
+                                }
+                            },
+                            {
+                                "configMap": {
+                                    "defaultMode": 420,
+                                    "name": "nginxconfigmap"
+                                },
+                                "name": "configmap-volume"
+                            }
+                        ]
+                    }
+                }
+            },
+            "status": {
+                "conditions": [
+                    {
+                        "lastTransitionTime": "2022-03-23T22:23:32Z",
+                        "lastUpdateTime": "2022-03-23T22:23:32Z",
+                        "message": "Deployment does not have minimum availability.",
+                        "reason": "MinimumReplicasUnavailable",
+                        "status": "False",
+                        "type": "Available"
+                    },
+                    {
+                        "lastTransitionTime": "2022-03-23T22:33:33Z",
+                        "lastUpdateTime": "2022-03-23T22:33:33Z",
+                        "message": "ReplicaSet \"my-nginx-7487f5c668\" has timed out progressing.",
+                        "reason": "ProgressDeadlineExceeded",
+                        "status": "False",
+                        "type": "Progressing"
+                    }
+                ],
+                "observedGeneration": 1,
+                "replicas": 1,
+                "unavailableReplicas": 1,
+                "updatedReplicas": 1
+            }
+        },
+        {
+            "apiVersion": "apps/v1",
+            "kind": "Deployment",
+            "metadata": {
+                "annotations": {
+                    "deployment.kubernetes.io/revision": "1",
+                    "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"apps/v1\",\"kind\":\"Deployment\",\"metadata\":{\"annotations\":{},\"name\":\"nginx-deployment\",\"namespace\":\"production\"},\"spec\":{\"replicas\":3,\"selector\":{\"matchLabels\":{\"app\":\"nginx\"}},\"template\":{\"metadata\":{\"labels\":{\"app\":\"nginx\"}},\"spec\":{\"containers\":[{\"image\":\"nginx:alpine\",\"name\":\"nginx\",\"ports\":[{\"containerPort\":80}]}]}}}}\n"
+                },
+                "creationTimestamp": "2022-03-28T00:38:05Z",
+                "generation": 1,
+                "name": "nginx-deployment",
+                "namespace": "production",
+                "resourceVersion": "271934",
+                "uid": "1dd8bb71-bb66-43df-83c5-92835066b91c"
+            },
+            "spec": {
+                "progressDeadlineSeconds": 600,
+                "replicas": 3,
+                "revisionHistoryLimit": 10,
+                "selector": {
+                    "matchLabels": {
+                        "app": "nginx"
+                    }
+                },
+                "strategy": {
+                    "rollingUpdate": {
+                        "maxSurge": "25%",
+                        "maxUnavailable": "25%"
+                    },
+                    "type": "RollingUpdate"
+                },
+                "template": {
+                    "metadata": {
+                        "creationTimestamp": null,
+                        "labels": {
+                            "app": "nginx"
+                        }
+                    },
+                    "spec": {
+                        "containers": [
+                            {
+                                "image": "nginx:alpine",
+                                "imagePullPolicy": "IfNotPresent",
+                                "name": "nginx",
+                                "ports": [
+                                    {
+                                        "containerPort": 80,
+                                        "protocol": "TCP"
+                                    }
+                                ],
+                                "resources": {},
+                                "terminationMessagePath": "/dev/termination-log",
+                                "terminationMessagePolicy": "File"
+                            }
+                        ],
+                        "dnsPolicy": "ClusterFirst",
+                        "restartPolicy": "Always",
+                        "schedulerName": "default-scheduler",
+                        "securityContext": {},
+                        "terminationGracePeriodSeconds": 30
+                    }
+                }
+            },
+            "status": {
+                "availableReplicas": 3,
+                "conditions": [
+                    {
+                        "lastTransitionTime": "2022-03-28T00:38:20Z",
+                        "lastUpdateTime": "2022-03-28T00:38:20Z",
+                        "message": "Deployment has minimum availability.",
+                        "reason": "MinimumReplicasAvailable",
+                        "status": "True",
+                        "type": "Available"
+                    },
+                    {
+                        "lastTransitionTime": "2022-03-28T00:38:05Z",
+                        "lastUpdateTime": "2022-03-28T00:38:20Z",
+                        "message": "ReplicaSet \"nginx-deployment-9fbb7d78\" has successfully progressed.",
+                        "reason": "NewReplicaSetAvailable",
+                        "status": "True",
+                        "type": "Progressing"
+                    }
+                ],
+                "observedGeneration": 1,
+                "readyReplicas": 3,
+                "replicas": 3,
+                "updatedReplicas": 3
+            }
+        }
+    ],
+    "kind": "List",
+    "metadata": {
+        "resourceVersion": "",
+        "selfLink": ""
+    }
+}
+
+[20:44:28] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[20:44:28] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> NAME                              READY   STATUS    RESTARTS   AGE     IP            NODE                    NOMINATED NODE   READINESS GATES
+nginx-deployment-9fbb7d78-92f4d   1/1     Running   0          6m23s   10.244.1.64   k8s-n1-187.ziyo.local   <none>           <none>
+nginx-deployment-9fbb7d78-bdrgk   1/1     Running   0          6m23s   10.244.2.60   k8s-n2-188.ziyo.local   <none>           <none>
+nginx-deployment-9fbb7d78-whxrs   1/1     Running   0          6m23s   10.244.0.64   k8s-m-186.ziyo.local    <none>           <none>
+
+[20:44:31] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "apiVersion": "v1",
+    "kind": "Pod",
+    "metadata": {
+        "creationTimestamp": "2022-03-28T00:38:05Z",
+        "generateName": "nginx-deployment-9fbb7d78-",
+        "labels": {
+            "app": "nginx",
+            "pod-template-hash": "9fbb7d78"
+        },
+        "name": "nginx-deployment-9fbb7d78-92f4d",
+        "namespace": "production",
+        "ownerReferences": [
+            {
+                "apiVersion": "apps/v1",
+                "blockOwnerDeletion": true,
+                "controller": true,
+                "kind": "ReplicaSet",
+                "name": "nginx-deployment-9fbb7d78",
+                "uid": "83a34ed0-2f2f-483f-91df-6614832f2965"
+            }
+        ],
+        "resourceVersion": "271921",
+        "uid": "c6bc718c-541f-476d-bb86-4ca9a9d4db86"
+    },
+    "spec": {
+        "containers": [
+            {
+                "image": "nginx:alpine",
+                "imagePullPolicy": "IfNotPresent",
+                "name": "nginx",
+                "ports": [
+                    {
+                        "containerPort": 80,
+                        "protocol": "TCP"
+                    }
+                ],
+                "resources": {},
+                "terminationMessagePath": "/dev/termination-log",
+                "terminationMessagePolicy": "File",
+                "volumeMounts": [
+                    {
+                        "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+                        "name": "kube-api-access-k6blw",
+                        "readOnly": true
+                    }
+                ]
+            }
+        ],
+        "dnsPolicy": "ClusterFirst",
+        "enableServiceLinks": true,
+        "nodeName": "k8s-n1-187.ziyo.local",
+        "preemptionPolicy": "PreemptLowerPriority",
+        "priority": 0,
+        "restartPolicy": "Always",
+        "schedulerName": "default-scheduler",
+        "securityContext": {},
+        "serviceAccount": "default",
+        "serviceAccountName": "default",
+        "terminationGracePeriodSeconds": 30,
+        "tolerations": [
+            {
+                "effect": "NoExecute",
+                "key": "node.kubernetes.io/not-ready",
+                "operator": "Exists",
+                "tolerationSeconds": 300
+            },
+            {
+                "effect": "NoExecute",
+                "key": "node.kubernetes.io/unreachable",
+                "operator": "Exists",
+                "tolerationSeconds": 300
+            }
+        ],
+        "volumes": [
+            {
+                "name": "kube-api-access-k6blw",
+                "projected": {
+                    "defaultMode": 420,
+                    "sources": [
+                        {
+                            "serviceAccountToken": {
+                                "expirationSeconds": 3607,
+                                "path": "token"
+                            }
+                        },
+                        {
+                            "configMap": {
+                                "items": [
+                                    {
+                                        "key": "ca.crt",
+                                        "path": "ca.crt"
+                                    }
+                                ],
+                                "name": "kube-root-ca.crt"
+                            }
+                        },
+                        {
+                            "downwardAPI": {
+                                "items": [
+                                    {
+                                        "fieldRef": {
+                                            "apiVersion": "v1",
+                                            "fieldPath": "metadata.namespace"
+                                        },
+                                        "path": "namespace"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "status": {
+        "conditions": [
+            {
+                "lastProbeTime": null,
+                "lastTransitionTime": "2022-03-28T00:38:05Z",
+                "status": "True",
+                "type": "Initialized"
+            },
+            {
+                "lastProbeTime": null,
+                "lastTransitionTime": "2022-03-28T00:38:17Z",
+                "status": "True",
+                "type": "Ready"
+            },
+            {
+                "lastProbeTime": null,
+                "lastTransitionTime": "2022-03-28T00:38:17Z",
+                "status": "True",
+                "type": "ContainersReady"
+            },
+            {
+                "lastProbeTime": null,
+                "lastTransitionTime": "2022-03-28T00:38:05Z",
+                "status": "True",
+                "type": "PodScheduled"
+            }
+        ],
+        "containerStatuses": [
+            {
+                "containerID": "docker://cc25423555f7c2735e09df7737887457a90b1f917a88250025f981bad6982330",
+                "image": "nginx:alpine",
+                "imageID": "docker-pullable://nginx@sha256:da9c94bec1da829ebd52431a84502ec471c8e548ffb2cedbf36260fd9bd1d4d3",
+                "lastState": {},
+                "name": "nginx",
+                "ready": true,
+                "restartCount": 0,
+                "started": true,
+                "state": {
+                    "running": {
+                        "startedAt": "2022-03-28T00:38:15Z"
+                    }
+                }
+            }
+        ],
+        "hostIP": "192.168.0.187",
+        "phase": "Running",
+        "podIP": "10.244.1.64",
+        "podIPs": [
+            {
+                "ip": "10.244.1.64"
+            }
+        ],
+        "qosClass": "BestEffort",
+        "startTime": "2022-03-28T00:38:05Z"
+    }
+}
+
+[20:44:50] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "apiVersion": "v1",
+    "kind": "Pod",
+    "metadata": {
+        "creationTimestamp": "2022-03-28T00:38:05Z",
+        "generateName": "nginx-deployment-9fbb7d78-",
+        "labels": {
+            "app": "nginx",
+            "pod-template-hash": "9fbb7d78"
+        },
+        "name": "nginx-deployment-9fbb7d78-bdrgk",
+        "namespace": "production",
+        "ownerReferences": [
+            {
+                "apiVersion": "apps/v1",
+                "blockOwnerDeletion": true,
+                "controller": true,
+                "kind": "ReplicaSet",
+                "name": "nginx-deployment-9fbb7d78",
+                "uid": "83a34ed0-2f2f-483f-91df-6614832f2965"
+            }
+        ],
+        "resourceVersion": "271915",
+        "uid": "b6f21310-ff4d-4d05-82df-71dcd394c151"
+    },
+    "spec": {
+        "containers": [
+            {
+                "image": "nginx:alpine",
+                "imagePullPolicy": "IfNotPresent",
+                "name": "nginx",
+                "ports": [
+                    {
+                        "containerPort": 80,
+                        "protocol": "TCP"
+                    }
+                ],
+                "resources": {},
+                "terminationMessagePath": "/dev/termination-log",
+                "terminationMessagePolicy": "File",
+                "volumeMounts": [
+                    {
+                        "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+                        "name": "kube-api-access-wgckp",
+                        "readOnly": true
+                    }
+                ]
+            }
+        ],
+        "dnsPolicy": "ClusterFirst",
+        "enableServiceLinks": true,
+        "nodeName": "k8s-n2-188.ziyo.local",
+        "preemptionPolicy": "PreemptLowerPriority",
+        "priority": 0,
+        "restartPolicy": "Always",
+        "schedulerName": "default-scheduler",
+        "securityContext": {},
+        "serviceAccount": "default",
+        "serviceAccountName": "default",
+        "terminationGracePeriodSeconds": 30,
+        "tolerations": [
+            {
+                "effect": "NoExecute",
+                "key": "node.kubernetes.io/not-ready",
+                "operator": "Exists",
+                "tolerationSeconds": 300
+            },
+            {
+                "effect": "NoExecute",
+                "key": "node.kubernetes.io/unreachable",
+                "operator": "Exists",
+                "tolerationSeconds": 300
+            }
+        ],
+        "volumes": [
+            {
+                "name": "kube-api-access-wgckp",
+                "projected": {
+                    "defaultMode": 420,
+                    "sources": [
+                        {
+                            "serviceAccountToken": {
+                                "expirationSeconds": 3607,
+                                "path": "token"
+                            }
+                        },
+                        {
+                            "configMap": {
+                                "items": [
+                                    {
+                                        "key": "ca.crt",
+                                        "path": "ca.crt"
+                                    }
+                                ],
+                                "name": "kube-root-ca.crt"
+                            }
+                        },
+                        {
+                            "downwardAPI": {
+                                "items": [
+                                    {
+                                        "fieldRef": {
+                                            "apiVersion": "v1",
+                                            "fieldPath": "metadata.namespace"
+                                        },
+                                        "path": "namespace"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "status": {
+        "conditions": [
+            {
+                "lastProbeTime": null,
+                "lastTransitionTime": "2022-03-28T00:38:06Z",
+                "status": "True",
+                "type": "Initialized"
+            },
+            {
+                "lastProbeTime": null,
+                "lastTransitionTime": "2022-03-28T00:38:16Z",
+                "status": "True",
+                "type": "Ready"
+            },
+            {
+                "lastProbeTime": null,
+                "lastTransitionTime": "2022-03-28T00:38:16Z",
+                "status": "True",
+                "type": "ContainersReady"
+            },
+            {
+                "lastProbeTime": null,
+                "lastTransitionTime": "2022-03-28T00:38:05Z",
+                "status": "True",
+                "type": "PodScheduled"
+            }
+        ],
+        "containerStatuses": [
+            {
+                "containerID": "docker://a2cc601d219670b52faa02a55cfe4e8252bb2b50f224faa931ec7d8e35ad39bf",
+                "image": "nginx:alpine",
+                "imageID": "docker-pullable://nginx@sha256:da9c94bec1da829ebd52431a84502ec471c8e548ffb2cedbf36260fd9bd1d4d3",
+                "lastState": {},
+                "name": "nginx",
+                "ready": true,
+                "restartCount": 0,
+                "started": true,
+                "state": {
+                    "running": {
+                        "startedAt": "2022-03-28T00:38:15Z"
+                    }
+                }
+            }
+        ],
+        "hostIP": "192.168.0.188",
+        "phase": "Running",
+        "podIP": "10.244.2.60",
+        "podIPs": [
+            {
+                "ip": "10.244.2.60"
+            }
+        ],
+        "qosClass": "BestEffort",
+        "startTime": "2022-03-28T00:38:06Z"
+    }
+}
+
+[20:44:56] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "apiVersion": "v1",
+    "kind": "Pod",
+    "metadata": {
+        "creationTimestamp": "2022-03-28T00:38:05Z",
+        "generateName": "nginx-deployment-9fbb7d78-",
+        "labels": {
+            "app": "nginx",
+            "pod-template-hash": "9fbb7d78"
+        },
+        "name": "nginx-deployment-9fbb7d78-whxrs",
+        "namespace": "production",
+        "ownerReferences": [
+            {
+                "apiVersion": "apps/v1",
+                "blockOwnerDeletion": true,
+                "controller": true,
+                "kind": "ReplicaSet",
+                "name": "nginx-deployment-9fbb7d78",
+                "uid": "83a34ed0-2f2f-483f-91df-6614832f2965"
+            }
+        ],
+        "resourceVersion": "271930",
+        "uid": "40a1b3f5-09f8-4932-b1bf-f1c3f4e70a78"
+    },
+    "spec": {
+        "containers": [
+            {
+                "image": "nginx:alpine",
+                "imagePullPolicy": "IfNotPresent",
+                "name": "nginx",
+                "ports": [
+                    {
+                        "containerPort": 80,
+                        "protocol": "TCP"
+                    }
+                ],
+                "resources": {},
+                "terminationMessagePath": "/dev/termination-log",
+                "terminationMessagePolicy": "File",
+                "volumeMounts": [
+                    {
+                        "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+                        "name": "kube-api-access-bf4sl",
+                        "readOnly": true
+                    }
+                ]
+            }
+        ],
+        "dnsPolicy": "ClusterFirst",
+        "enableServiceLinks": true,
+        "nodeName": "k8s-m-186.ziyo.local",
+        "preemptionPolicy": "PreemptLowerPriority",
+        "priority": 0,
+        "restartPolicy": "Always",
+        "schedulerName": "default-scheduler",
+        "securityContext": {},
+        "serviceAccount": "default",
+        "serviceAccountName": "default",
+        "terminationGracePeriodSeconds": 30,
+        "tolerations": [
+            {
+                "effect": "NoExecute",
+                "key": "node.kubernetes.io/not-ready",
+                "operator": "Exists",
+                "tolerationSeconds": 300
+            },
+            {
+                "effect": "NoExecute",
+                "key": "node.kubernetes.io/unreachable",
+                "operator": "Exists",
+                "tolerationSeconds": 300
+            }
+        ],
+        "volumes": [
+            {
+                "name": "kube-api-access-bf4sl",
+                "projected": {
+                    "defaultMode": 420,
+                    "sources": [
+                        {
+                            "serviceAccountToken": {
+                                "expirationSeconds": 3607,
+                                "path": "token"
+                            }
+                        },
+                        {
+                            "configMap": {
+                                "items": [
+                                    {
+                                        "key": "ca.crt",
+                                        "path": "ca.crt"
+                                    }
+                                ],
+                                "name": "kube-root-ca.crt"
+                            }
+                        },
+                        {
+                            "downwardAPI": {
+                                "items": [
+                                    {
+                                        "fieldRef": {
+                                            "apiVersion": "v1",
+                                            "fieldPath": "metadata.namespace"
+                                        },
+                                        "path": "namespace"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "status": {
+        "conditions": [
+            {
+                "lastProbeTime": null,
+                "lastTransitionTime": "2022-03-28T00:38:06Z",
+                "status": "True",
+                "type": "Initialized"
+            },
+            {
+                "lastProbeTime": null,
+                "lastTransitionTime": "2022-03-28T00:38:20Z",
+                "status": "True",
+                "type": "Ready"
+            },
+            {
+                "lastProbeTime": null,
+                "lastTransitionTime": "2022-03-28T00:38:20Z",
+                "status": "True",
+                "type": "ContainersReady"
+            },
+            {
+                "lastProbeTime": null,
+                "lastTransitionTime": "2022-03-28T00:38:05Z",
+                "status": "True",
+                "type": "PodScheduled"
+            }
+        ],
+        "containerStatuses": [
+            {
+                "containerID": "docker://42b3a96d5fe8e843904201c7d986d3aa628ae2f198a641d45672e5bfadf57c3a",
+                "image": "nginx:alpine",
+                "imageID": "docker-pullable://nginx@sha256:77cc350019d0188d3115084265483dcefdd8489ccf719ff4e4c956b48de8ff6a",
+                "lastState": {},
+                "name": "nginx",
+                "ready": true,
+                "restartCount": 0,
+                "started": true,
+                "state": {
+                    "running": {
+                        "startedAt": "2022-03-28T00:38:18Z"
+                    }
+                }
+            }
+        ],
+        "hostIP": "192.168.0.186",
+        "phase": "Running",
+        "podIP": "10.244.0.64",
+        "podIPs": [
+            {
+                "ip": "10.244.0.64"
+            }
+        ],
+        "qosClass": "BestEffort",
+        "startTime": "2022-03-28T00:38:06Z"
+    }
+}
+
+[20:45:09] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[20:46:09] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[20:47:09] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[20:48:09] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[20:49:10] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[20:50:10] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[20:51:10] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[20:52:10] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[20:53:10] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[20:54:10] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[20:55:10] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[20:56:10] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[20:57:10] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[20:58:10] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[20:59:11] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[21:00:11] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[21:01:11] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[21:02:11] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[21:03:11] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[21:04:11] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[21:05:11] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[21:06:11] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[21:07:11] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[21:08:11] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[21:09:12] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[21:10:12] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[21:11:12] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[21:12:12] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[21:13:12] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[21:14:12] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[21:15:12] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[21:16:12] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[21:17:12] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[21:18:12] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[21:19:13] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[21:20:13] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[21:21:13] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[21:22:13] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[21:23:13] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[21:24:13] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[21:25:13] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[21:26:13] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[21:27:13] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[21:28:13] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[21:29:13] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
+[21:30:14] [127.0.0.1][83a63d7b][ExtensionHostConnection] <2532> {
+    "kind": "Config",
+    "apiVersion": "v1",
+    "preferences": {},
+    "clusters": [
+        {
+            "name": "kubernetes",
+            "cluster": {
+                "server": "https://192.168.0.186:6443",
+                "certificate-authority-data": "DATA+OMITTED"
+            }
+        }
+    ],
+    "users": [
+        {
+            "name": "kubernetes-admin",
+            "user": {
+                "client-certificate-data": "REDACTED",
+                "client-key-data": "REDACTED"
+            }
+        }
+    ],
+    "contexts": [
+        {
+            "name": "dev",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "development"
+            }
+        },
+        {
+            "name": "kubernetes-admin@kubernetes",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin"
+            }
+        },
+        {
+            "name": "prod",
+            "context": {
+                "cluster": "kubernetes",
+                "user": "kubernetes-admin",
+                "namespace": "production"
+            }
+        }
+    ],
+    "current-context": "prod"
+}
+
