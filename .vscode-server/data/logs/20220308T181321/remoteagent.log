@@ -1,8 +1,0 @@
-[2022-03-08 18:13:22.193] [remoteagent] [info] Extension host agent started.
-[2022-03-08 18:13:22.956] [remoteagent] [info] [127.0.0.1][ad4b09e2][ManagementConnection] New connection established.
-[2022-03-08 18:13:22.968] [remoteagent] [info] [127.0.0.1][cd01eb71][ExtensionHostConnection] New connection established.
-[2022-03-08 18:13:22.981] [remoteagent] [info] [127.0.0.1][cd01eb71][ExtensionHostConnection] <2073> Launched Extension Host Process.
-[2022-03-08 21:37:54.145] [remoteagent] [info] [127.0.0.1][ad4b09e2][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
-[2022-03-08 21:38:16.000] [remoteagent] [info] [127.0.0.1][ad4b09e2][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
-[2022-03-08 21:38:16.002] [remoteagent] [info] [127.0.0.1][ad4b09e2][ManagementConnection] The client has reconnected.
-[2022-03-08 21:38:16.027] [remoteagent] [info] [127.0.0.1][cd01eb71][ExtensionHostConnection] The client has reconnected.
